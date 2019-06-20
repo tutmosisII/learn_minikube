@@ -1,8 +1,8 @@
-#Aprendiendo Minikube
+# Aprendiendo Minikube
 
 Es una herramienta open source que almacenada en [Github](https://github.com/kubernetes/minikube)
 
-#Instalación v1.1.1 2019-06-07
+# Instalación v1.1.1 2019-06-07
 
 ## Instalación de virtualbox
 
@@ -21,7 +21,8 @@ Este monando iniciará una máquina virtual de virtualbox con el cluster de kube
 
 # Accediendo a minukube
 
-Para usar el cluster usted necesita tener instalada la línea de comados de kubectl
+Para usar el cluster usted necesita tener instalada la línea de comados de [kubectl](https://kubernetes.io/es/docs/tasks/tools/install-kubectl/#instalar-kubectl)
+tambien puede usar el [script de instalación](scripts/install_kubectl.sh)
 
 1) Verifique que minikue instaló las configuraciones de acceso
 
@@ -36,3 +37,22 @@ Para usar el cluster usted necesita tener instalada la línea de comados de kube
    kubectl get pods
    kubectl get pods --all-namespaces
    
+# Creando un primer deployment
+
+Corremos una imagen con un nginx
+
+1) Crear un deploymnet
+
+   kubectl create deployment mynginx --image=nginx
+
+2) Verifique el pod
+  
+   kubectl get pods
+
+# Accediendo al servidor
+
+Para acceder al servidor se require crear un servicio.
+
+
+
+
