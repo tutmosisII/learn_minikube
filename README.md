@@ -53,6 +53,14 @@ Corremos una imagen con un nginx
 
 Para acceder al servidor se require crear un servicio.
 
+   kubectl expose deployment mynginx --port 80
 
+Redireccione el puerto a su ambiente local
 
+   kubectl port-forward svc/mynginx 8080:80
+
+Cargue la página	
+
+   curl localhost:8080
+  
 
