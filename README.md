@@ -59,7 +59,7 @@ Redireccione el puerto a su ambiente local
 
    kubectl port-forward svc/mynginx 8080:80
 
-Cargue la página	
+Cargue la página en otra terminal	
 
    curl localhost:8080
   
